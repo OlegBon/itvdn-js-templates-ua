@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>006 - Завдання 3</title>
+  </head>
+  <body>
+    <pre>
+        Створіть список, який автоматично оновлюється через певний інтервал часу без перезавантаження сторінки.
+        Використайте вебворкер для асинхронного завантаження нових даних та шаблони роботи з DOM для оновлення списку
+        без блокування основного потоку.
+    </pre>
+
+    <form id="numberForm">
+      <label for="start">Початок діапазону:</label>
+      <input type="number" id="start" name="start" required />
+      <br />
+      <label for="end">Кінець діапазону:</label>
+      <input type="number" id="end" name="end" required />
+      <br />
+      <button type="submit" id="calculateButton">Обчислити прості числа</button>
+    </form>
+
+    <div id="statusText"></div>
+    <!-- лише для повідомлень -->
+    <div id="result">
+      <ul id="myList"></ul>
+      <!-- список залишаємо тут -->
+    </div>
+
+    <script src="006-03_script.js"></script>
+    <script src="006-03_worker.js"></script>
+  </body>
+</html>
